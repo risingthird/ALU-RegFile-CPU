@@ -1,7 +1,7 @@
 lbl1:	addi $s0 $0 -1
 	add  $s1 $0 $s0
 	lui  0x3FF
-	mfhi $s2 
+	mflo $s2 
 	ori  $s2 $s2 0x3F
 	beq  $s0 $s2 lbl2
 	andi $s0 $s0 0
