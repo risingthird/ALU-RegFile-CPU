@@ -21,7 +21,7 @@ if log:
 
 alu_header = "\t|\t\t\tStudent\t\t\t\t\t|\t\t\tReference\t\t\t\t|\nProblem\t|Cycle\tEqual\tOvrflw\tOutput\t\ttoHi\t\tStall\t|Cycle\tEqual\tOvrflw\tOutput\t\ttoHi\t\tStall\t|\n" + ''.join('-' for a in xrange(137))
 reg_header = "\t|\t\t\t\t\t\t\tStudent\t\t\t\t\t\t|\t\t\t\t\t\tReference\t\t\t\t\t\t|\nProblem\t|Cycle\t$t0\t\t$t1\t\t$t2\t\t$t3\t\tRead1\t\tRead2\t\t|Cycle\t$t0\t\t$t1\t\t$t2\t\t$t3\t\tRead1\t\tRead2\t\t|\n" + ''.join('-' for a in xrange(211))
-cpu_header = "Diff|$s0\t$s1\t\t$s2\t\t$sp\t\t$ra\t\t$hi\t\t$lo\t\tCycle\tAddr.\tInstruction\t\n" + ''.join('-' for a in xrange(100))
+cpu_header = "Diff|$s0\t$s1\t\t$s2\t\t$ra\t\t$sp\t\t$hi\t\t$lo\t\tCycle\tAddr.\tInstruction\t\n" + ''.join('-' for a in xrange(100))
 
 def to_hex(num):
   tokens = num.split('\t')
