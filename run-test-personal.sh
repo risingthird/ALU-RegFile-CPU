@@ -4,8 +4,8 @@
 # Make sure your files are in the directory above this one though!
 # Credits to William Huang
 
-cp alu.circ tests
-cp regfile.circ tests
-cd tests
+cp alu.circ tests-3-1
+cp regfile.circ tests-3-1
+cd tests-3-1
 python2.7 sanity_test_personal.py
 cd ..
